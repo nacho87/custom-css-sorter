@@ -1,0 +1,72 @@
+{
+  "name": "custom-css-sorter",
+  "displayName": "Custom CSS Sorter",
+  "description": "Multi line custom sorter.",
+  "version": "0.0.1",
+  "publisher": "Nacho Decima",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nacho87/custom-css-sorter"
+  },
+  "bugs": {
+    "url": "https://github.com/nacho87/custom-css-sorter/issues",
+    "email": "jidecima87@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [
+    "onCommand:extension.sortIt"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Order Custom Css",
+      "properties": {
+        "order-custom-css.array": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "default": null,
+          "description": "Enter all the rules and use semicolumn as separator"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.sortIt",
+        "title": "Order Css Properties"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.sortIt",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  }
+}
