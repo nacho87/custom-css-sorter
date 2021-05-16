@@ -14,7 +14,7 @@ Click to extension tab and search `Custom Css Sorter` and install it reload your
 Go to Settings `Custom Css Sorter` open `settings.json` and add to the array custom properties (example: `"content", "position", "display", "font"`) for apply the custom order that you decided or add one element `"alphabetical"` for use the alphabetic order in css.
 
 - Custom Order
-<p><img align="center" src="https://media.giphy.com/media/mAXbHRJaQstCfN0F1d/giphy.gif"/></p>
+<p><img align="center" src="https://media.giphy.com/media/8yUWzwvYagAdD1bEr3/giphy.gif"/></p>
 
 <br>
 
