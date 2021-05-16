@@ -14,7 +14,7 @@
     "email": "jidecima87@gmail.com"
   },
   "engines": {
-    "vscode": "^1.20.0"
+    "vscode": "^1.56.0"
   },
   "categories": [
     "Formatters"
