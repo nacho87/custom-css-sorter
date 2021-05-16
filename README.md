@@ -3,11 +3,11 @@
 <p align="center"> Custom Rules when you sort your Css properties</p>
 
 <p align="center"> Visual Studio Code Extension - In Css you can select multiple lines of css and sorter using custom rules.</p>
-<p align="center"><img align="center" src=""/></p>
+<!-- <p align="center"><img align="center" src=""/></p> -->
 
 ## Install
 
-Click to extension tab and search `Custom Css Sorter` and install it reload your editor. Or use this [Custom Css Sorter](link_to_marketplace).
+Click to extension tab and search `Custom Css Sorter` and install it reload your editor. Or use this [Custom Css Sorter](https://marketplace.visualstudio.com/items?itemName=NachoDecima.custom-css-sorter).
 
 ## Usage
 
