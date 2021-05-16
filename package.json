@@ -26,14 +26,13 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "Order Custom Css",
+      "title": "Custom CSS Sorter",
       "properties": {
         "order-custom-css.array": {
           "type": [
-            "array",
-            "null"
+            "array"
           ],
-          "default": null,
+          "default": [],
           "description": "Enter all the rules and use semicolumn as separator"
         }
       }
@@ -51,7 +50,16 @@
         "mac": "cmd+shift+a",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.sortIt",
+          "group": "navigation@1",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
