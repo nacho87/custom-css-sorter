@@ -56,7 +56,19 @@ Go to Settings `Custom Css Sorter` open `settings.json` and add to the array cus
   "order-custom-css.array": ["alphabetical"]
 }
 ```
+---
+- **Extra options**
 
+If you are using some js template example EJS you can configure the open/close tag and string tag
+```
+{
+  ...,
+  "order-custom-css.array": ["alphabetical"],
+  "order-custom-css.openTemplate":  "<%",
+  "order-custom-css.closeTemplate": "%>",
+  "order-custom-css.openTemplateString": "<%-"
+}
+```
 <br>
 
 ## How to Use - Execution

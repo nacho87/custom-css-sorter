@@ -2,7 +2,7 @@
   "name": "custom-css-sorter",
   "displayName": "Custom CSS Sorter",
   "description": "Multi line custom sorter.",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "publisher": "NachoDecima",
   "license": "MIT",
   "repository": {
@@ -34,6 +34,27 @@
           ],
           "default": [],
           "description": "Enter all the rules and use semicolon as separator"
+        },
+        "order-custom-css.openTemplate": {
+          "type": [
+            "string"
+          ],
+          "default": "<%",
+          "description": "Add open tag if you have one js template languaje example '<%'"
+        },
+        "order-custom-css.closeTemplate": {
+          "type": [
+            "string"
+          ],
+          "default": "%>",
+          "description": "Add close tag if you have one js template languaje example '%>'"
+        },
+        "order-custom-css.openTemplateString": {
+          "type": [
+            "string"
+          ],
+          "default": "<%-",
+          "description": "Add open tag string if you have one js template languaje example '<%-'"
         }
       }
     },
@@ -73,7 +94,7 @@
     "@types/vscode": "^1.44.0",
     "eslint": "^7.19.0",
     "glob": "^7.1.6",
-    "mocha": "^8.2.1",
+    "mocha": "^10.4.0",
     "typescript": "^4.1.3",
     "vscode-test": "^1.5.0"
   }
